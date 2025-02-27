@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        /*Assignment operators
+        */
+        let a=10;
+        a+=30;
+        console.log(a);
+        a-=15;
+        console.log(a);
+        a*=2;
+        console.log(a);
+        a%=3;
+        console.log(a);
+        a/=2;
+        console.log(a);
+
+
+
+         /*
+comparision operators
+*/
+
+let k=4;
+let k1=6;
+let c=(k<k1)
+console.log(c);
+
+let k2=4;
+let k3=6;
+let d=(k>k3)
+console.log(d);
+ 
+let f=5;
+let f1=5;
+let f2=(f<=f1)
+console.log(f2)
+
+let x=5;
+let x1=9;
+let x2=(x1>=x)
+console.log(x2)
+
+let y=10;
+let y1=12;
+let y2=(y!=y1);
+console.log(y2)
+
+
+let b=10
+let b1="14"
+let b2=(b==b1)
+console.log(b2);
+
+let p=10
+let p1="10"
+let p2=(p===p1)
+console.log(p2);
+
+
+/*                           
+ Grade Classification: Declare a variable score and 
+        set it to a value between 0 and 100.
+         Use nested ternary operators to classify the score 
+         into grades: A (>= 90), B (>= 75), C (>= 60), D (>= 45),
+          and F (below 45). Log the grade.
+
+*/
+let score=Number(prompt("enter the number"))
+   grade=(score>=90 )?"Grade A": (score>=75)?"Grade B":(score>=60)?"Grade c":(score>=45)?"Grade D": (score<=45)?"Grade F":"grade E";
+   console.log(grade);
+
+   
+/*   
+Temperature Check: Declare a variable temperature and 
+        use nested ternary operators to categorize it as "Hot" (above 30), 
+        "Warm" (20-30), "Cool" (10-19), and "Cold" (below 10).
+         Log the result. 
+*/
+let temp=Number(prompt("Enter the temperature"))
+result=(temp>=30)?"Hot":(temp>=20 && temp<=30)?"warm":(temp>=10 && temp<=19)?"Cool":(temp<10)?"cold":"";
+console.log(result);
+
+/*
+Age Group: Declare a variable age and 
+        use the ternary operator to classify the age into
+         "Child" (0-12), "Teen" (13-19), "Adult" (20-64), 
+         and "Senior" (65 and above). Log the result
+*/
+let age=Number(prompt("Enter Your Age:"))
+res=(age>=65)?"Senior":(age>=20 && age<=64)?"Adult":(age>=13 && age<=19)?"Teen":(age>=0 && age<=12)?"Child":"";
+console.log(res);
+
+    </script>
+</body>
+</html>
